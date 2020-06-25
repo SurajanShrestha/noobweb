@@ -59,17 +59,28 @@
             margin-bottom: 25px;
         }
         .tutorialOptions{
-            background-color: #32BF84;
             padding: 10px 0px;
             display: flex;
             flex-direction: column;
             align-items: center;
         }
-        .option{
+        .tutorialOptions a{
             width: 50%;
-            border: 1px solid #CAFFFB;
+            text-decoration: none;
+            color: black;
+        }
+        .option{
+            border: 1px solid gray;
             padding: 5px;
             margin: 10px;
+        }
+        .option:hover{
+            background-color: #32BF84;
+            color: #048243;
+            -webkit-transform: scale(1.1);
+	        -moz-transform: scale(1.1);
+	        -o-transform: scale(1.1);
+	        transform: scale(1.1);
         }
         @media(max-width: 600px){
             .intro{
@@ -149,30 +160,46 @@
         <div class="tutorialList">
             <h5>Our Tutorials are arranged in a Serial Wise Manner. Follow them accordingly step by step.</h5>
             <div class="tutorialOptions">
-                <div class="option">
-                    <h5>HTML5</h5>
-                </div>
-                <div class="option">
-                    <h5>CSS3</h5>
-                </div>
-                <div class="option">
-                    <h5>Git and Github</h5>
-                </div>
-                <div class="option">
-                    <h5>Javascript</h5>
-                </div>
-                <div class="option">
-                    <h5>Bootstrap4</h5>
-                </div>
-                <div class="option">
-                    <h5>AJAX</h5>
-                </div>
-                <div class="option">
-                    <h5>Node.js</h5>
-                </div>
-                <div class="option">
-                    <h5>Express.js</h5>
-                </div>
+                <a href="./1.html" target="_blank">
+                    <div class="option">
+                        <h5>HTML5 &#8680;</h5>
+                    </div>
+                </a>
+                <a href="./2.html" target="_blank">
+                    <div class="option">
+                        <h5>CSS3 &#8680;</h5>
+                    </div>
+                </a>
+                <a href="" target="_blank">
+                    <div class="option">
+                        <h5>Git and Github &#8680;</h5>
+                    </div>
+                </a>
+                <a href="" target="_blank">
+                    <div class="option">
+                        <h5>Javascript &#8680;</h5>
+                    </div>
+                </a>
+                <a href="" target="_blank">
+                    <div class="option">
+                        <h5>Bootstrap4 &#8680;</h5>
+                    </div>
+                </a>
+                <a href="" target="_blank">
+                    <div class="option">
+                        <h5>AJAX &#8680;</h5>
+                    </div>
+                </a>
+                <a href="" target="_blank">
+                    <div class="option">
+                        <h5>Node.js &#8680;</h5>
+                    </div>
+                </a>
+                <a href="" target="_blank">
+                    <div class="option">
+                        <h5>Express.js &#8680;</h5>
+                    </div>
+                </a>
             </div>
         </div>
     </main>
