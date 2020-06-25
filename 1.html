@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./style.css" type="text/css" rel="stylesheet">
+    <title>Youtube Api test</title>
+</head>
+<body>
+    <div class="sidebar">
+        <a href="./1.html" class="active">Home</a>
+        <a href="./2.html" class="">Learn SASS</a>
+        <a href="#">References</a>
+        <a href="#">Aboutsasasasasasasasasasasas</a>
+        <a href="#">Contact</a>
+        <a href="#">References</a>
+        <a href="#">Aboutsasasasasasasasasasasas</a>
+        <a href="#">Contact</a>
+        <a href="#">References</a>
+        <a href="#">Aboutsasasasasasasasasasasas</a>
+        <a href="#">Contact</a>
+        <a href="#">References</a>
+        <a href="#">Aboutsasasasasasasasasasasas</a>
+        <a href="#">Contact</a>
+        <a href="#">References</a>
+        <a href="#">Aboutsasasasasasasasasasasas</a>
+        <a href="#">Contact</a>
+        <a href="#">References</a>
+    </div>
+    <main>
+        <h1>Youtube Api Test.</h1>
+        <div>
+            <input type="text" name="name">
+            <button type="button" onclick="clickFunc()">Search</button>
+        </div>
+        <iframe height="200" width="300" class="iframeClass"></iframe>
+        <div>
+            <h2>Sidebar</h2>
+  <p>This sidebar is of full height (100%) and always shown.</p>
+  <p>Scroll down the page to see the result.</p>
+  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+        </div>
+        <script>
+            const apiKey="AIzaSyBOrW0YGKKclc4zc-M80svK9_GFP2d3jvI";
+            /*fetch(url)
+                .then(response => response.json())
+                .then(data => {
+                    console.log(data);
+                    //console.log(data.items[0].id.videoId);
+                    //console.log above is to help access proper data in the JSON
+                    //object
+                    //set iframe source to proper URL (notice same dynamic strings 
+                    //used above)
+                    //document.querySelector(".iframeClass").src = `https://www.youtube.com/embed/${data.items[0].id.videoId}`;   
+                });*/
+            clickFunc=()=>{
+                const url=`https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=1&q=${document.getElementsByTagName("input")[0].value}&key=${apiKey}`;
+                /*const xhr=new XMLHttpRequest();
+                xhr.responseType="json";
+                xhr.onreadystatechange=()=>{
+                    if(xhr.readyState===XMLHttpRequest.DONE){
+                        console.log(xhr.response);
+                        document.querySelector(".iframeClass").src = `https://www.youtube.com/embed/${xhr.response.items[0].id.videoId}`;
+                    }
+                }
+                xhr.open("GET",url);
+                xhr.send();*/
+                fetch(url)
+                .then(response => response.json())
+                .then(data => {
+                    console.log(data);
+                    //console.log(data.items[0].id.videoId);
+                    //console.log above is to help access proper data in the JSON
+                    //object
+                    //set iframe source to proper URL (notice same dynamic strings 
+                    //used above)
+                    //document.querySelector(".iframeClass").src = `https://www.youtube.com/embed/${data.items[0].id.videoId}`;   
+                    document.querySelector(".iframeClass").src = `https://www.youtube.com/embed/${data.items[0].id.videoId}`;
+                });
+            };
+        </script>
+    </main>
+    <script src="./script.js" type="text/javascript"></script>
+</body>
+</html>

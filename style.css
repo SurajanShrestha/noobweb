@@ -1,0 +1,33 @@
+.sidebar{
+    height: 95%;
+    width: 15%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    overflow: scroll;
+    padding-top: 20px;
+    background-color: black;
+}
+.sidebar a{
+    display: block;
+    font-size: 30px;
+    line-height: 150%;
+    padding: 0px 10px;
+    text-decoration: none;
+    color: white;
+    background-color: green;
+    margin: 5px 0px;
+}
+.sidebar a:hover{
+    color: gray;
+    background-color: brown;
+}
+.sidebar a.active{
+    background-color: blue;
+}
+main{
+    margin-left: 15%;
+}
+p{
+    font-size: 40px;
+}

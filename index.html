@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Playfair+Display&family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <style>
+        body{
+            font-family: 'Raleway', sans-serif;
+            background-color: #CAFFFB;
+        }
+        .navbar a{
+            margin-right: 0px;
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5vmax;
+            letter-spacing: 1px;
+        }
+        .navbar h3{
+            color: gainsboro;
+            font-family: 'Playfair Display', serif;
+            font-size: 3vh;
+            letter-spacing: 1px;
+        }
+        .intro{
+            height: 400px;
+            display: flex;
+            position: relative; 
+            top: 10vh;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            padding: 20px 35px;
+            border-bottom: 1px solid gray;
+        }
+        .intro h1{
+            margin: 20px 0px;
+            font-size: 2.5vmax;
+        }
+        .intro h3,h4{
+            text-align: center;
+            font-size: 1.8vmax;
+            margin: 20px 0px;
+        }
+        .tutorialList{
+            position: relative;
+            top: 10vh;
+            margin: 40px 20px;
+            display: flex;
+            flex-direction: column;
+        }
+        .tutorialList h5{
+            font-family: 'Montserrat', sans-serif;
+            text-align: center;
+            margin-bottom: 25px;
+        }
+        .tutorialOptions{
+            background-color: #32BF84;
+            padding: 10px 0px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .option{
+            width: 50%;
+            border: 1px solid #CAFFFB;
+            padding: 5px;
+            margin: 10px;
+        }
+        @media(max-width: 600px){
+            .intro{
+                height: 400px;
+                display: flex;
+                position: relative; 
+                top: 25vh;
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-items: center;
+                padding: 20px 35px;
+                border-bottom: 1px solid gray;
+            }
+            .intro h1{
+                font-size: 3.5vmax;
+            }
+            .intro h3,h4{
+                font-size: 2.4vmax;
+                text-align: center;
+            }
+            .navbar a{
+                margin-right: 0px;
+                font-family: 'Playfair Display', serif;
+                font-size: 2vmax;
+                letter-spacing: 1px;
+            }
+            .tutorialList{
+                position: relative;
+                top: 25vh;
+                margin: 40px 20px;
+                display: flex;
+                flex-direction: column;
+            }            
+            .tutorialList h5{
+                font-family: 'Montserrat', sans-serif;
+                text-align: center;
+                font-size: 2.5vmax;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar bg-dark navbar-dark fixed-top">
+        <!-- Brand -->
+        <a class="navbar-brand" href="#">
+            <img src="./logo.png" alt="logo" width="180vmin">
+        </a>
+        <h3>Welcome to NoobWeb-We have the complete Roadmap for Web Dev</h3>
+      
+        <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="./1.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./2.html">Tutorials</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Credits</a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+    <main>
+        <div class="intro">
+            <h1>Welcome to NoobWeb</h1>
+            <h3>Learn to Code at Home.</h3>
+            <h3>All you need is a computer and internet connection.</h3>
+            <h4>NoobWeb provides you with the best tutorial with a complete Linear Roadmap to learn Full Stack Web Development.</h4>
+        </div>
+        <div class="tutorialList">
+            <h5>Our Tutorials are arranged in a Serial Wise Manner. Follow them accordingly step by step.</h5>
+            <div class="tutorialOptions">
+                <div class="option">
+                    <h5>HTML5</h5>
+                </div>
+                <div class="option">
+                    <h5>CSS3</h5>
+                </div>
+                <div class="option">
+                    <h5>Git and Github</h5>
+                </div>
+                <div class="option">
+                    <h5>Javascript</h5>
+                </div>
+                <div class="option">
+                    <h5>Bootstrap4</h5>
+                </div>
+                <div class="option">
+                    <h5>AJAX</h5>
+                </div>
+                <div class="option">
+                    <h5>Node.js</h5>
+                </div>
+                <div class="option">
+                    <h5>Express.js</h5>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
