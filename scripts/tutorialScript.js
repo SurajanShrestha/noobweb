@@ -6,3 +6,4 @@ for(var i=0;i<sidebarObj.children.length;i++){
         links[i].className="active";
     }
 }
+

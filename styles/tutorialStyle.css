@@ -1,0 +1,79 @@
+body{
+    font-family: serif;
+}
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sidebar{
+    font-family: 'Montserrat', sans-serif;
+    position: fixed;
+    top: 98px;
+    left: 0px;
+    width: 16vmax;
+    height: 82%;
+    overflow: scroll;
+    overflow-y: scroll;
+    z-index: 1;
+    background-color: #ebebe0;
+}
+.sidebar h5{
+    text-align: center;
+    background-color: slategray;
+    padding: 2px 0px;
+}
+.sidebar a{
+    display: block;
+    font-size: 2.6vmin;
+    text-decoration: none;
+    color: #41413e;
+    margin: 0px 2px;
+}
+.sidebar a:hover{
+    background-color: gainsboro;
+    color: black;
+}
+.sidebar a.active{
+    background-color: forestgreen;
+    color: #ebebe0;
+}
+.tutorialText{
+    position: relative;
+    top: 100px;
+    left: 21%;
+    width: 75%;
+    padding: 30px 20px;
+    margin: 40px 0px;
+    background-color: #CAFFFB;
+}
+.tutorialText p{
+    font-size: 3vmin;
+}
+.tutorialVideo{
+    position: relative;
+    top: 100px;
+    left: 21%;
+    width: 75%;
+    padding: 30px 20px;
+    margin: 40px 0px;
+}
+.tutorialButton{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: 100px;
+    left: 21%;
+    width: 75%;
+    padding: 10px 20px;
+    margin: 40px 0px;
+    background-color: gainsboro;
+    font-family: monospace;
+}
+iframe{
+    border: 1px solid #32BF84;
+    width: 40vmax;
+    height: 50vmin;
+}
+@media(max-width: 600px){
+}
